@@ -22,6 +22,8 @@ public class OriginCompleter extends HttpServlet
 
             String term = request.getParameter("term");
 
+            password = "work123!54"
+            
             ArrayList<String> list = ((FBS) (sc.getAttribute("fbs"))).getCities((Connection) sc.getAttribute("con"), term);
 
             String searchList = new Gson().toJson(list);
